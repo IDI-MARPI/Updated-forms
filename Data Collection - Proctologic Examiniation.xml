@@ -1,0 +1,180 @@
+<htmlform formName="Data Collection - Proctologic Examiniation"
+          formDescription="Data Collection - Proctologic Examiniation"
+          formEncounterType="dc6518e1-a72e-4d71-856d-f863a5e24396"
+          formUuid="09529fe1-cf6a-467f-8a11-e6b14d30125a"
+          formVersion="1.0"
+          formAddMetadata="yes"
+          formUILocation="patientDashboard.visitActions"
+          formOrder="20"
+          formIcon="icon-medkit"
+          formShowIf="(visit.active || !visit.active) &amp;&amp; patient.person.dead==false"
+          formDisplayStyle="Standard"
+          formLabel="Data Collection - Proctologic Examiniation">
+    <redirectOnSave
+            url="/coreapps/patientdashboard/patientDashboard.page?patientId={{patient.id}}&amp;encounterId={{encounter.id}}#visits"/>
+
+    <style>
+
+        form label, .form label {
+            float: left;
+            padding: 0px 10px 0 0;
+        }
+
+
+form input[type="checkbox"], form input[type="radio"], .form input[type="checkbox"], .form input[type="radio"] {
+	margin: 2px 5px;
+}
+
+        table td {
+            background: #FFFFFF;
+            color: #404040;
+            vertical-align: top;
+        }
+
+        form select, .form select {
+            min-width: 0px;
+        }
+
+        form input, form select, form textarea, form ul.select, .form input, .form select, .form textarea, .form
+        ul.select {
+            background-color: #FBFBFB;
+            border: 1px solid #CEC9C9;
+            border-radius: 5px;
+            margin-bottom: 0px;
+            padding: 3px;
+            min-width: auto;
+            display: inline-block;
+        }
+
+        .row {
+            width: 100%;
+            float: left;
+            display: inline-flex;
+            clear: both;
+        }
+
+        .row .row-col2 {
+            float: left;
+            width: 50%;
+        }
+
+        table th, table td {
+            border: 1px solid #AFAFAF;
+        }
+
+       table.borderLess, table.borderLess tr, table.borderLess td {
+           border: none;
+       }
+
+      form input[type="radio"], .form input[type="radio"] {
+	margin: 3px;
+}
+    </style>
+    <div class="ai-page-frame">
+        <div class="headers" style="text-align: center;">
+            <h3 style="background: #FFFF7D; padding: 10px;">Data Collection - Proctologic Examination</h3>
+        </div>
+        <section>
+            <table>
+                <tbody>
+               <tr>
+                    <td>
+                        <label>Date today (dd/mm/yy):</label>
+                        <encounterDate default="today" disallowMultipleEncountersOnDate="block"/>
+                    </td>
+                    <td>
+                        <label>Unique Number:</label>
+                        <patient field="identifier" identifierTypeId="c9e42035-7112-45b3-bfcf-4b37e1091dd4"
+                                 required="true"/>
+                    </td>
+                    <td>
+                          <label>Health Facility</label><encounterLocation default="629d78e9-93e5-43b0-ad8a-48313fd99117"
+                                           order="629d78e9-93e5-43b0-ad8a-48313fd99117"/>
+                    </td>
+               </tr>
+                <tr>
+                    <td colspan="3">
+                        <label><strong>0- Definition of patient:</strong></label>
+                          <obs conceptId="163194" answerConceptIds="163141,163193,163140,163246,163247" answerLabels="1.MSM,2.MSW,3.FSW,4.Other male,5.Other female" />
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="3">
+                        <label><strong>1- Spontaneous reason given for the consultation:</strong></label>
+                          <obs id ="spontaneousReason" conceptId="163248" answerConceptIds="163249,163250,163251,163252,163253,163254,163255" answerLabels="1.HIV screening,2.Taking ARV,3.Systematic consultation,4.Proctologic problem reported spontaneously,5.HIV infection monitoring,6.Without ARV,7.Other medical problems">
+                            <controls>
+                               <when value="163255" thenDisplay="#otherMedicalproblems" />
+                            </controls>
+                          </obs>
+                          <span id="otherMedicalproblems">
+                          <obs conceptId="163255" labelText="Specify" answerConceptIds="163256,116128,117889,163264,137293,163257,163258,163259,163260,163261,163262,163263,5622"/>
+                          </span>
+                    </td>
+               </tr>
+                <tr>
+                    <td colspan="3">
+                        <label><strong>2- After the medical interview, did the patient actually have a proctologic problem?</strong></label>
+                        <obs conceptId="163265" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
+                    </td>
+               </tr>
+                <tr>
+                    <td colspan="3">
+                        <label><strong>3- What is/are the current proctologic symptoms/s of the patient?<i>(atleast once a week or during the past month)</i>:</strong></label><br/>
+                              <obs conceptId="163266" answerConceptId="147241" answerLabel="Bleeding" /><br/> 	
+                              <obs conceptId="163266" answerConceptId="996" answerLabel="Constipation" /><br/>
+                              <obs conceptId="163266" answerConceptId="163267" answerLabel="Pain" /><br/>
+                              <obs conceptId="163266" answerConceptId="163268" answerLabel="Anal lump" /><br/>
+                              <obs conceptId="163266" answerConceptId="163269" answerLabel="Anal pruritus" /><br/> 
+                              <obs conceptId="163266" answerConceptId="163270" answerLabel="Uncontrolled anal leakage" />
+                    </td>
+              </tr>
+              <tr>
+                    <td colspan="3">
+                        <label><strong>4- What is/are the proctologic diagnoses?</strong></label><br/>
+                              <obs conceptId="163271" answerConceptId="138849" answerLabel="Hemorrhoids" /><br/>
+                              <obs conceptId="163271" answerConceptId="163273" answerLabel="Anal fissure" /><br/>
+                              <obs conceptId="163271" answerConceptId="163274" answerLabel="Abscess and/or anal fistula" /><br/>
+                              <obs conceptId="163271" answerConceptId="163275" answerLabel="Skin condition(eczema,psoriasis..)" /><br/>
+                              <obs conceptId="163271" answerConceptId="163276" answerLabel="Functional ano-rectal disorder(incontinence, constipation..)" /><br/>
+                              <obs conceptId="163271" answerConceptId="163277" answerLabel="Tumour pathology" /><br/>
+                              <obs conceptId="163271" answerConceptId="163279" answerLabel="Ano rectal STI" />
+                              <obs conceptId="163279" answerConceptIds="163280,163281,163282" labelText="Specify" /><br/>
+                              <obs conceptId="163271" answerConceptId="163278" answerLabel="Other proctologic lesion(including unknown)" /><br/>
+                              <obs conceptId="163272" labelText="VAS measure of the patient's discomfort due to this anal condition (0 - 10):" />
+                    </td>
+              </tr>
+              <tr>
+                    <td colspan="3">
+                        <label><strong>5- Treatment/care offered</strong></label>
+                              <obs id="treatmentOffered" conceptId="163283" answerConceptIds="1107,163284,163285,163286,163287" answerLabels="1.Nothing,2.Medical Treatment,3.Remote clinical monitoring,4.Electrosurgery,5.Referral to another specialist">
+                                       <controls>
+                                            <when value="163287" thenDisplay="#referredToSpecialistSection" />
+                                       </controls>
+                              </obs>
+                   </td>
+                </tr>
+              <tr id="referredToSpecialistSection" >
+                    <td colspan="3">
+                        <label><strong>6- If referred to another specialist, what was the treatment/care provided?</strong></label>
+                              <obs conceptId="163288" answerConceptIds="163289,163284,163285,163290,163286" answerLabels="1.Monitoring,2.Medical Treatment,3.Remote clinical monitoring,4.Surgery,5.Electrosurgery" /><br/>
+                   </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><label><span class="required">*</span>Names of service providers:</label>
+                        <encounterProvider required="true"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                            <obs id="returndate" conceptId="5096" required="required" allowFutureDates="true"
+                                 labelText="Next Review date:"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <submit/>
+        </section>
+    </div>
+</htmlform>
