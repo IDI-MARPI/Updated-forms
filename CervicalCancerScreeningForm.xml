@@ -87,7 +87,7 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 <tr>
                     <td>
                         <label><strong>2. Parity:</strong></label><br/>
-                          <obs conceptId="163307" />
+                          <obs conceptId="1000167" />
                     </td>
                </tr>
                 <tr>
@@ -99,37 +99,37 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 <tr>
                     <td>
                         <label><strong>4. Previous Screening</strong></label><br/>
-                        <obs conceptId="163308" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
+                        <obs conceptId="1000168" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label><strong>5. Date of Previous Screening</strong></label><br/>
-                        <obs conceptId="163309" />
+                        <obs conceptId="1000169" />
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label><strong>6. Reason for Screening:</strong></label>
-                             <obs conceptId="163310" />
+                             <obs conceptId="1000170" />
                    </td>
                 </tr>
                 <tr>
                     <td>
                         <label><strong>7. VIA Results</strong></label>
-                        <obs conceptId="163311" answerConceptIds="664,703,163312,163313,149" answerLabels="Pos,Neg,Highly Suspicious,Invassive,Cervicitis"/>
+                        <obs conceptId="1000171" answerConceptIds="664,703,1000172,1000173,149" answerLabels="Pos,Neg,Highly Suspicious,Invassive,Cervicitis"/>
                    </td>
                 </tr>
                <tr>
                     <td>
                         <label><strong>8. Status of Cervix:</strong></label><br/>
-                        <obs conceptId="163314" />
+                        <obs conceptId="1000174" />
                     </td>
                 </tr>     
                 <tr>
                     <td>
                         <label><strong>9. Comments:</strong></label><br/>
-                                  <obs id="br" conceptId="163315" rows="2" cols="80" />
+                                  <obs id="br" conceptId="1000175" rows="2" cols="80" />
                     </td>
                 </tr>
                 <tr>
