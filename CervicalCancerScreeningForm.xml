@@ -104,7 +104,7 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 </tr>
                 <tr>
                     <td>
-                        <label><strong>5. Date of Previous Screening</strong></label><br/>
+                       <label><strong>5. Date of Previous Screening</strong></label><br/>
                         <obs conceptId="1000169" />
                     </td>
                 </tr>
