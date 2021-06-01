@@ -95,60 +95,60 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 <tr>
                     <td colspan="3">
                         <label><strong>0- Definition of patient:</strong></label>
-                          <obs conceptId="163194" answerConceptIds="163141,163193,163140,163246,163247" answerLabels="1.MSM,2.MSW,3.FSW,4.Other male,5.Other female" />
+                          <obs conceptId="1000054" answerConceptIds="1000001,1000053,1000000,1000106,1000107" answerLabels="1.MSM,2.MSW,3.FSW,4.Other male,5.Other female" />
                     </td>
                </tr>
                <tr>
                     <td colspan="3">
                         <label><strong>1- Spontaneous reason given for the consultation:</strong></label>
-                          <obs id ="spontaneousReason" conceptId="163248" answerConceptIds="163249,163250,163251,163252,163253,163254,163255" answerLabels="1.HIV screening,2.Taking ARV,3.Systematic consultation,4.Proctologic problem reported spontaneously,5.HIV infection monitoring,6.Without ARV,7.Other medical problems">
+                          <obs id ="spontaneousReason" conceptId="1000108" answerConceptIds="1000109,1000110,1000111,1000112,1000113,1000114,1000115" answerLabels="1.HIV screening,2.Taking ARV,3.Systematic consultation,4.Proctologic problem reported spontaneously,5.HIV infection monitoring,6.Without ARV,7.Other medical problems">
                             <controls>
-                               <when value="163255" thenDisplay="#otherMedicalproblems" />
+                               <when value="1000115" thenDisplay="#otherMedicalproblems" />
                             </controls>
                           </obs>
                           <span id="otherMedicalproblems">
-                          <obs conceptId="163255" labelText="Specify" answerConceptIds="163256,116128,117889,163264,137293,163257,163258,163259,163260,163261,163262,163263,5622"/>
+                          <obs conceptId="1000115" labelText="Specify" answerConceptIds="1000116,116128,117889,1000124,137293,1000117,1000118,1000119,1000120,1000121,1000122,1000123,5622"/>
                           </span>
                     </td>
                </tr>
                 <tr>
                     <td colspan="3">
                         <label><strong>2- After the medical interview, did the patient actually have a proctologic problem?</strong></label>
-                        <obs conceptId="163265" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
+                        <obs conceptId="1000125" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
                     </td>
                </tr>
                 <tr>
                     <td colspan="3">
                         <label><strong>3- What is/are the current proctologic symptoms/s of the patient?<i>(atleast once a week or during the past month)</i>:</strong></label><br/>
-                              <obs conceptId="163266" answerConceptId="147241" answerLabel="Bleeding" /><br/> 	
-                              <obs conceptId="163266" answerConceptId="996" answerLabel="Constipation" /><br/>
-                              <obs conceptId="163266" answerConceptId="163267" answerLabel="Pain" /><br/>
-                              <obs conceptId="163266" answerConceptId="163268" answerLabel="Anal lump" /><br/>
-                              <obs conceptId="163266" answerConceptId="163269" answerLabel="Anal pruritus" /><br/> 
-                              <obs conceptId="163266" answerConceptId="163270" answerLabel="Uncontrolled anal leakage" />
+                              <obs conceptId="1000126" answerConceptId="147241" answerLabel="Bleeding" /><br/> 	
+                              <obs conceptId="1000126" answerConceptId="996" answerLabel="Constipation" /><br/>
+                              <obs conceptId="1000126" answerConceptId="1000127" answerLabel="Pain" /><br/>
+                              <obs conceptId="1000126" answerConceptId="1000128" answerLabel="Anal lump" /><br/>
+                              <obs conceptId="1000126" answerConceptId="1000129" answerLabel="Anal pruritus" /><br/> 
+                              <obs conceptId="1000126" answerConceptId="1000130" answerLabel="Uncontrolled anal leakage" />
                     </td>
               </tr>
               <tr>
                     <td colspan="3">
                         <label><strong>4- What is/are the proctologic diagnoses?</strong></label><br/>
-                              <obs conceptId="163271" answerConceptId="138849" answerLabel="Hemorrhoids" /><br/>
-                              <obs conceptId="163271" answerConceptId="163273" answerLabel="Anal fissure" /><br/>
-                              <obs conceptId="163271" answerConceptId="163274" answerLabel="Abscess and/or anal fistula" /><br/>
-                              <obs conceptId="163271" answerConceptId="163275" answerLabel="Skin condition(eczema,psoriasis..)" /><br/>
-                              <obs conceptId="163271" answerConceptId="163276" answerLabel="Functional ano-rectal disorder(incontinence, constipation..)" /><br/>
-                              <obs conceptId="163271" answerConceptId="163277" answerLabel="Tumour pathology" /><br/>
-                              <obs conceptId="163271" answerConceptId="163279" answerLabel="Ano rectal STI" />
-                              <obs conceptId="163279" answerConceptIds="163280,163281,163282" labelText="Specify" /><br/>
-                              <obs conceptId="163271" answerConceptId="163278" answerLabel="Other proctologic lesion(including unknown)" /><br/>
-                              <obs conceptId="163272" labelText="VAS measure of the patient's discomfort due to this anal condition (0 - 10):" />
+                              <obs conceptId="1000131" answerConceptId="138849" answerLabel="Hemorrhoids" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000133" answerLabel="Anal fissure" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000134" answerLabel="Abscess and/or anal fistula" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000135" answerLabel="Skin condition(eczema,psoriasis..)" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000136" answerLabel="Functional ano-rectal disorder(incontinence, constipation..)" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000137" answerLabel="Tumour pathology" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000139" answerLabel="Ano rectal STI" />
+                              <obs conceptId="1000139" answerConceptIds="1000140,1000141,1000142" labelText="Specify" /><br/>
+                              <obs conceptId="1000131" answerConceptId="1000138" answerLabel="Other proctologic lesion(including unknown)" /><br/>
+                              <obs conceptId="1000132" labelText="VAS measure of the patient's discomfort due to this anal condition (0 - 10):" />
                     </td>
               </tr>
               <tr>
                     <td colspan="3">
                         <label><strong>5- Treatment/care offered</strong></label>
-                              <obs id="treatmentOffered" conceptId="163283" answerConceptIds="1107,163284,163285,163286,163287" answerLabels="1.Nothing,2.Medical Treatment,3.Remote clinical monitoring,4.Electrosurgery,5.Referral to another specialist">
+                              <obs id="treatmentOffered" conceptId="1000143" answerConceptIds="1107,1000144,1000145,1000146,1000147" answerLabels="1.Nothing,2.Medical Treatment,3.Remote clinical monitoring,4.Electrosurgery,5.Referral to another specialist">
                                        <controls>
-                                            <when value="163287" thenDisplay="#referredToSpecialistSection" />
+                                            <when value="1000147" thenDisplay="#referredToSpecialistSection" />
                                        </controls>
                               </obs>
                    </td>
@@ -156,7 +156,7 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
               <tr id="referredToSpecialistSection" >
                     <td colspan="3">
                         <label><strong>6- If referred to another specialist, what was the treatment/care provided?</strong></label>
-                              <obs conceptId="163288" answerConceptIds="163289,163284,163285,163290,163286" answerLabels="1.Monitoring,2.Medical Treatment,3.Remote clinical monitoring,4.Surgery,5.Electrosurgery" /><br/>
+                              <obs conceptId="1000148" answerConceptIds="1000149,1000144,1000145,1000150,1000146" answerLabels="1.Monitoring,2.Medical Treatment,3.Remote clinical monitoring,4.Surgery,5.Electrosurgery" /><br/>
                    </td>
                 </tr>
                 <tr>
