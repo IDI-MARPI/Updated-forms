@@ -88,40 +88,40 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 </tr>
                 <tr>
                     <td colspan="2">
-                          <obs conceptId="163291" labelText="Other common names known by community:" />
+                          <obs conceptId="1000151" labelText="Other common names known by community:" />
                     </td>
                </tr>
                 <tr>
                     <td colspan="2">
-                          <obs conceptId="163168" labelText="Occupation:" />
+                          <obs conceptId="1000028" labelText="Occupation:" />
                     </td>
                </tr>
                 <tr>
                     <td colspan="2">
                         <label><strong>Are you willing to be enrolled for treatment?</strong></label><br/>
-                        <obs conceptId="163292" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
+                        <obs conceptId="1000152" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <label><strong>If no, why?</strong></label><br/>
-                        <obs conceptId="163300" answerConceptId="163293" answerLabel="Already on treatment" /><br/>
-                        <obs conceptId="163294" labelText="Which Facility:" /><br/>
-                        <obs conceptId="163295" labelText="Distance (estimate in km):" /><br/>
-                        <obs conceptId="163300" answerConceptId="163296" answerLabel="Not ready to start treatment" /><br/>
-                        <obs conceptId="163300" answerConceptId="163297" answerLabel="Other" /><obs conceptId="163297" labelText="Specify:" /><br/>
+                        <obs conceptId="1000160" answerConceptId="1000153" answerLabel="Already on treatment" /><br/>
+                        <obs conceptId="1000154" labelText="Which Facility:" /><br/>
+                        <obs conceptId="1000155" labelText="Distance (estimate in km):" /><br/>
+                        <obs conceptId="1000160" answerConceptId="1000156" answerLabel="Not ready to start treatment" /><br/>
+                        <obs conceptId="1000160" answerConceptId="1000157" answerLabel="Other" /><obs conceptId="1000157" labelText="Specify:" /><br/>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <label><strong>Which health centre is near your village that provides HIV services:</strong></label>
-                               <obs conceptId="163298"  />
+                               <obs conceptId="1000158"  />
                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <label><strong>Would you like to be referred to the near by center?</strong></label>
-                        <obs conceptId="163299" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
+                        <obs conceptId="1000159" answerConceptIds="90003,90004" style="radio" answerLabels="Yes,No"/>
                    </td>
                 </tr>
                <tr>
@@ -136,7 +136,7 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                 <tr>
                     <td colspan="2">
                         <label><strong>Observation/comment from the counselor/clinician:</strong></label><br/>
-                                  <obs id="br" conceptId="163306" rows="2" cols="80" />
+                                  <obs id="br" conceptId="1000166" rows="2" cols="80" />
                     </td>
                 </tr>
                 <tr>
@@ -151,22 +151,22 @@ form input[type="checkbox"], form input[type="radio"], .form input[type="checkbo
                     <td><label>First follow up done and reasons given if not enrolled or linked to care (either by phone or home or community visit)</label>
                     </td>
                     <td>
-                        <obs conceptId="163301" labelText="Date:" /><br/>
-                        <obs conceptId="163303" labelText="Remarks" rows="2" cols="80" />
+                        <obs conceptId="1000161" labelText="Date:" /><br/>
+                        <obs conceptId="1000163" labelText="Remarks" rows="2" cols="80" />
                     </td>
                 </tr>
                 <tr>
                     <td><label>Second follow up done and reasons given if not enrolled or linked to care (either by phone or home or community visit)</label>
                     </td>
                     <td>
-                        <obs conceptId="163302" labelText="Date:" /><br/>
-                        <obs conceptId="163304" labelText="Remarks" rows="2" cols="80" />
+                        <obs conceptId="1000162" labelText="Date:" /><br/>
+                        <obs conceptId="1000164" labelText="Remarks" rows="2" cols="80" />
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                         <label><strong>Key Landmarks and Map to locate the home of the client</strong></label><br/>
-                                  <obs id="br" conceptId="163305" rows="2" cols="80" />
+                                  <obs id="br" conceptId="1000165" rows="2" cols="80" />
                     </td>
                 </tr>
                 </tbody>
