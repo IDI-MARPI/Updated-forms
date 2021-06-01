@@ -95,8 +95,8 @@
         
 
         <ifMode mode="EDIT">
-            if( jq("#1000103").find("input").val()==''){
-               disable_fields(1000103);
+            if( jq("#163243").find("input").val()==''){
+               disable_fields(163243);
             }
             if( jq("#163381").find("input").val()==''){
                disable_fields(163381);
@@ -110,7 +110,7 @@
 
         </ifMode>
         <ifMode mode="ENTER">
-            disable_fields(1000103);
+            disable_fields(163243);
             disable_fields(163381);
             disable_fields(163391);
             jq("#163381").find("input[type$='text']").attr("disabled",true);
@@ -152,10 +152,10 @@
 
         jq('#other_key_population_category').change(function(){
         if(!jq('#other_key_population_category').find(':checkbox').prop('checked')){
-        jq("#1000103").find("input[type$='text']").attr("disabled",true);
-        jq("#1000103").find("input[type$='text']").val("");
+        jq("#163243").find("input[type$='text']").attr("disabled",true);
+        jq("#163243").find("input[type$='text']").val("");
         }else{
-        jq("#1000103").find("input[type$='text']").attr("disabled",false); }
+        jq("#163243").find("input[type$='text']").attr("disabled",false); }
         });
 
         function disable_fields(groupId){
@@ -255,7 +255,7 @@
                             <label><strong>Key Population Category</strong></label>
                             <br/>
                             <excludeIf velocityTest="$patient.gender =='M' ">
-                                <obs id="1000054" conceptId="1000054" answerConceptId="1000000"/>
+                                <obs id="163194" conceptId="1000054" answerConceptId="1000000"/>
                             </excludeIf>
                             <excludeIf velocityTest="$patient.gender =='F' ">
                                 <obs conceptId="1000054" answerConceptId="1000053"/>
@@ -276,7 +276,7 @@
                                 Specify:
                             </label>
                             <br/>
-                            <obs id="1000103" conceptId="1000103" />
+                            <obs id="163243" conceptId="1000103" />
                         </td>
                         <td>
                             <label><strong>Priority Population</strong></label>
@@ -319,11 +319,11 @@
                         <td colspan="2">
                             <label><strong>Private Sector</strong></label>
                             <br/>
-                            <obs id="1000226" conceptId="1000226" answerConceptIds="1000227,1000228,1000229,162920" answerLabels="Pharmacy,DrugShop,Clinic,Workplace" style="radio" />
+                            <obs id="163366" conceptId="1000226" answerConceptIds="1000227,1000228,1000229,162920" answerLabels="Pharmacy,DrugShop,Clinic,Workplace" style="radio" />
                             <br/>
                             <label><strong>Others </strong></label>
                             <br/>
-                            <obs id="1000230" conceptId="1000230" answerConceptIds="1000231,1000232" style="radio" />
+                            <obs id="163370" conceptId="1000230" answerConceptIds="1000231,1000232" style="radio" />
                         </td>
                     </tr>
                 </tbody>
