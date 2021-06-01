@@ -255,33 +255,33 @@
                             <label><strong>Key Population Category</strong></label>
                             <br/>
                             <excludeIf velocityTest="$patient.gender =='M' ">
-                                <obs id="163194" conceptId="163194" answerConceptId="163140"/>
+                                <obs id="163194" conceptId="1000054" answerConceptId="1000000"/>
                             </excludeIf>
                             <excludeIf velocityTest="$patient.gender =='F' ">
-                                <obs conceptId="163194" answerConceptId="163193"/>
+                                <obs conceptId="1000054" answerConceptId="1000053"/>
                             </excludeIf>
-                            <obs conceptId="163194" answerConceptId="163357" />
+                            <obs conceptId="1000054" answerConceptId="1000217" />
                             <br/>
                             <excludeIf velocityTest="$patient.gender =='F' ">
-                                <obs conceptId="163194" answerConceptId="163141" />
+                                <obs conceptId="1000054" answerConceptId="1000001" />
                             </excludeIf>
                             <br/>
-                            <obs conceptId="163194" answerConceptId="163142" />
+                            <obs conceptId="1000054" answerConceptId="1000002" />
                             <br/>
-                            <obs conceptId="163194" answerConceptId="163358" />
+                            <obs conceptId="1000054" answerConceptId="1000218" />
                             <br/>
-                            <obs id="other_key_population_category" conceptId="163194" answerConceptId="5622" />
+                            <obs id="other_key_population_category" conceptId="1000054" answerConceptId="5622" />
                             <br/>
                             <label>
                                 Specify:
                             </label>
                             <br/>
-                            <obs id="163243" conceptId="163243" />
+                            <obs id="163243" conceptId="1000103" />
                         </td>
                         <td>
                             <label><strong>Priority Population</strong></label>
                             <br/>
-                            <obs id="163359" conceptId="163359" answerConceptIds="163360,163146,163145,5622" style="radio" />
+                            <obs id="163359" conceptId="1000219" answerConceptIds="1000220,1000006,1000005,5622" style="radio" />
                         </td>
                     </tr>
                 </tbody>
@@ -294,36 +294,36 @@
                         <td>
                             <label><strong>Type of Kit Issued</strong></label>
                             <br/>
-                            <obs conceptId="163346" answerConceptIds="163347,163348,163349,163350" style="radio" answerLabels="OralQuick,SureCheck,Insti,Mylan" />
+                            <obs conceptId="1000206" answerConceptIds="1000207,1000208,1000209,1000210" style="radio" answerLabels="OralQuick,SureCheck,Insti,Mylan" />
                         </td>
                         <td>
                             <label><strong>Community Distribution </strong></label>
                             <br/>
-                            <obs conceptId="163351" answerConceptIds="163355,163356,162895,163352,163353,163354" style="radio" />
+                            <obs conceptId="1000211" answerConceptIds="1000215,1000216,162895,1000212,1000213,1000214" style="radio" />
                         </td>
                         <td>
                             <label><strong>Public Health Facility Direct Distribution</strong></label>
                             <br/>
-                            <obs conceptId="163361" answerConceptId="163362"/>
-                            <obs conceptId="163361" answerConceptId="163183"/>
+                            <obs conceptId="1000221" answerConceptId="1000222"/>
+                            <obs conceptId="1000221" answerConceptId="1000043"/>
                             <excludeIf velocityTest="$patient.gender =='F' ">
-                                <obs conceptId="163361" answerConceptId="163364"/>
+                                <obs conceptId="1000221" answerConceptId="1000224"/>
                             </excludeIf>
                             <excludeIf velocityTest="$patient.gender =='M' ">
-                                <obs conceptId="163361" answerConceptId="163365"/>
+                                <obs conceptId="1000221" answerConceptId="1000225"/>
                             </excludeIf>
                             <excludeIf velocityTest="$patient.gender =='M' ">
-                                <obs conceptId="163361" answerConceptId="163363"/>
+                                <obs conceptId="1000221" answerConceptId="1000223"/>
                             </excludeIf>    
                         </td>
                         <td colspan="2">
                             <label><strong>Private Sector</strong></label>
                             <br/>
-                            <obs id="163366" conceptId="163366" answerConceptIds="163367,163368,163369,162920" answerLabels="Pharmacy,DrugShop,Clinic,Workplace" style="radio" />
+                            <obs id="163366" conceptId="1000226" answerConceptIds="1000227,1000228,1000229,162920" answerLabels="Pharmacy,DrugShop,Clinic,Workplace" style="radio" />
                             <br/>
                             <label><strong>Others </strong></label>
                             <br/>
-                            <obs id="163370" conceptId="163370" answerConceptIds="163371,163372" style="radio" />
+                            <obs id="163370" conceptId="1000230" answerConceptIds="1000231,1000232" style="radio" />
                         </td>
                     </tr>
                 </tbody>
@@ -348,49 +348,49 @@
                         <td>
                             <label><strong>Type of HIVST</strong></label>
                             <br/>
-                            <obs id="163373" conceptId="163373" answerConceptIds="163374,163375" style="radio" />
+                            <obs id="163373" conceptId="1000233" answerConceptIds="1000234,1000235" style="radio" />
                             <br/>
                             <label><strong>Number of Kits given out to clients </strong></label>
                             <br/>
-                            <obs conceptId="163376" />
+                            <obs conceptId="1000236" />
 
                         </td>
                         <td>
                             <label><strong>Test Kit Distributed for use by</strong></label>
                             <br/>
-                            <obs id="163377" conceptId="163377" answerConceptIds="978,163378,163379,90280,163380,5622" style="radio" />
+                            <obs id="163377" conceptId="1000237" answerConceptIds="978,1000238,1000239,90280,1000240,5622" style="radio" />
                             <br/>
                             <label>Specify:</label>
-                            <obs id="163381" conceptId="163381" />
+                            <obs id="163381" conceptId="1000241" />
                         </td>
                         <td>
                             <label><strong>If Test Kit for use by any other than self (Age and Sex of User)</strong></label>
                             <br/>
                             <label>Age:</label>
-                            <obs id="163382" conceptId="163382" />
+                            <obs id="163382" conceptId="1000242" />
                             <br/>
                             <label>Sex:</label>
-                            <obs id="163383" conceptId="163383" style="radio" />
+                            <obs id="163383" conceptId="1000243" style="radio" />
                         </td>
                         <td>
                             <label><strong>HIV Results (for Secondary Distribution)</strong></label>
                             <br/>
-                            <obs conceptId="163384" style="radio" answerConceptIds="1228,1229,163385" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
+                            <obs conceptId="1000244" style="radio" answerConceptIds="1228,1229,1000245" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
                         </td>
                         <td>
                             <label><strong>Confirmatory Results</strong></label>
                             <br/>
-                            <obs conceptId="163386" style="radio" answerConceptIds="1228,1229,163385" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
+                            <obs conceptId="1000246" style="radio" answerConceptIds="1228,1229,1000245" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
                         </td>
                         <td>
                             <label><strong>HIV Results </strong></label>
                             <br/>
-                            <obs conceptId="163387" style="radio" answerConceptIds="1228,1229,163385" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
+                            <obs conceptId="1000247" style="radio" answerConceptIds="1228,1229,1000245" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
                         </td>
                         <td>
                             <label><strong>Confirmatory Results</strong></label>
                             <br/>
-                            <obs conceptId="163388" style="radio" answerConceptIds="1228,1229,163385" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
+                            <obs conceptId="1000248" style="radio" answerConceptIds="1228,1229,1000245" answerLabels="R-Reactive,NR-Non-reactive,INV-Invalid Results"/>
                         </td>
 
 
@@ -411,35 +411,35 @@
                         <td>
                             <label><strong>HIV negative linked to care </strong></label>
                             <br/>
-                            <obs  conceptId="163389" answerConceptId="163211" answerLabels="PrEP"/>
+                            <obs  conceptId="1000249" answerConceptId="1000071" answerLabels="PrEP"/>
                              <excludeIf velocityTest="$patient.gender =='F' ">
-                               <obs  conceptId="163389" answerConceptId="163221" answerLabels="VMMC"/>
+                               <obs  conceptId="1000249" answerConceptId="1000081" answerLabels="VMMC"/>
                             </excludeIf>
-                            <obs  conceptId="163389" answerConceptId="90083" answerLabels="Condoms"/>
-                            <obs  conceptId="163389" answerConceptId="163390" answerLabels="Decline Referral"/>
-                            <obs id="163389" conceptId="163389" answerConceptId="5622" answerLabels="Other"/>
+                            <obs  conceptId="1000249" answerConceptId="90083" answerLabels="Condoms"/>
+                            <obs  conceptId="1000249" answerConceptId="1000250" answerLabels="Decline Referral"/>
+                            <obs id="163389" conceptId="1000249" answerConceptId="5622" answerLabels="Other"/>
 
                             <br/>
                             <label><strong>Specify: </strong></label>
                             <br/>
-                            <obs id="163391" conceptId="163391" />
+                            <obs id="163391" conceptId="1000251" />
 
                         </td>
                         <td>
                             <label><strong>HIV Positive linked to care</strong></label>
                             <br/>
-                            <obs conceptId="163392" answerConceptIds="163393,163390" style="radio" />
+                            <obs conceptId="1000252" answerConceptIds="1000253,1000250" style="radio" />
                             <br/>
                         </td>
                         <td>
                             <label><strong>HIV Positive initiated on ART</strong></label>
                             <br/>
-                            <obs conceptId="163394" answerConceptIds="1065,1066"  style="radio"/>
+                            <obs conceptId="1000254" answerConceptIds="1065,1066"  style="radio"/>
                         </td>
                         <td>
                             <label><strong>Indicate if the client reports the following as a result of HIVST</strong></label>
                             <br/>
-                            <obs conceptId="163395" style="radio" />
+                            <obs conceptId="1000255" style="radio" />
                         </td>
                         <td>
                             <label>Provider</label>
